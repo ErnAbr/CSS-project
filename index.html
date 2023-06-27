@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="navigation">
+      <div class="navigation__logo">
+        <img src="./assets/logo.svg" alt="LOGO" />
+      </div>
+      <nav class="navigation__link">
+        <input
+          type="checkbox"
+          id="dropdown-button"
+          class="navigation__checkbox"
+        />
+        <label for="dropdown-button" class="navigation__hamburger"
+          >&#9776;</label
+        >
+        <div
+          class="navigation__list dropdown-menu absolute-position"
+          id="dropdown-menu"
+        >
+          <ul class="navigation__unordered">
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Tutorials</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">References</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Website</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Paid Courses</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section id="hero-section" class="hero">
+        <div class="hero__introduction">
+          <p class="hero__para1">LAUNCHING SOON</p>
+          <h3 class="hero__header">An NFT like no other</h3>
+          <p class="hero__para2">
+            Don't miss out on the release of our new NFT. Sign up below to
+            receive updates we go live
+          </p>
+          <button class="hero__button">Sign Up</button>
+        </div>
+        <div class="hero__image-container">
+          <img class="hero__image" src="./assets/graphic.svg" alt="" />
+        </div>
+      </section>
+      <section id="promotion-section" class="promotion">
+        <h3 class="promotion__header">Free NFT for early birds</h3>
+        <p class="promotion__para">
+          Sign up today and you'll get a free NFT when we launch
+        </p>
+      </section>
+      <section id="sponsor-section" class="sponsor">
+        <img class="sponsor__logo" src="./assets/companies/1.svg" alt="" />
+
+        <img class="sponsor__logo" src="./assets/companies/2.svg" alt="" />
+
+        <img class="sponsor__logo" src="./assets/companies/3.svg" alt="" />
+
+        <img class="sponsor__logo" src="./assets/companies/4.svg" alt="" />
+
+        <img
+          class="sponsor__logo sponsor__logo--last"
+          src="./assets/companies/5.svg"
+          alt=""
+        />
+      </section>
+      <section id="nft-section" class="nft">
+        <div class="nft__introduction">
+          <h3 class="nft__header">LE super Rare Auction</h3>
+          <p class="nft__intro">
+            We have released four limited edition NFTs early which can be bid
+            via
+            <a class="nft__link" href="#">OpenSea.</a>
+          </p>
+        </div>
+        <article id="nft-card" class="card"></article>
+      </section>
+    </main>
+  </body>
+</html>
