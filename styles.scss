@@ -7,17 +7,15 @@
     @content;
   }
 }
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffeceb;
+  margin: 30px auto;
+}
 @include media-query(1024px) {
   body {
     width: 1024px;
-    margin: 30px auto;
   }
-}
-
-body {
-  margin: 30px auto;
-  font-family: Inter;
-  background-color: #ffeceb;
 }
 
 .navigation {
@@ -180,7 +178,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
+  margin-bottom: 10px;
   &__header {
     font-weight: 900;
     font-size: x-large;
