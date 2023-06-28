@@ -7,7 +7,6 @@ body {
   font-family: Inter;
   background-color: #ffeceb;
 }
-$button-border: linear-gradient(to right, #c1ec26, #528fff);
 
 .navigation {
   background-color: #ffeceb;
@@ -138,7 +137,7 @@ $button-border: linear-gradient(to right, #c1ec26, #528fff);
 .sponsor {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 25% 25% 25%;
   gap: 15px;
   margin-left: 15px;
   &__logo {
@@ -180,5 +179,71 @@ $button-border: linear-gradient(to right, #c1ec26, #528fff);
   }
   &__link:visited {
     color: inherit;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+
+  &__image {
+    width: 75%;
+  }
+  &__content {
+    background-color: rgb(182, 182, 182);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 75%;
+  }
+  &__top {
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    font-size: larger;
+    &--gold {
+      color: gold;
+    }
+    &--grey {
+      color: rgb(20, 20, 20);
+    }
+  }
+  &__middle {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    align-items: flex-end;
+    &--header,
+    &--para {
+      font-size: x-large;
+      margin: 0;
+    }
+    &--para {
+      display: flex;
+      align-items: center;
+    }
+    &--eth {
+      margin-right: 5px;
+    }
+  }
+  &__bottom {
+    margin-top: 12px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7%;
+    padding-right: 7%;
+    align-items: flex-end;
+    margin-bottom: 10px;
+    font-size: larger;
+    &--para1,
+    &--para2 {
+      margin: 0;
+    }
   }
 }
