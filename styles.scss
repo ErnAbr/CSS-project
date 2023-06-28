@@ -64,7 +64,7 @@ body {
     display: flex;
   }
 }
-@include media-query(768px) {
+@include media-query(769px) {
   .navigation {
     justify-content: space-between;
     &__checkbox:checked + &__hamburger + &__list {
