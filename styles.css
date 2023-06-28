@@ -21,20 +21,27 @@ body {
   display: none;
 }
 .navigation__list {
-  position: absolute;
-  top: 150px;
-  transform: translate(-100%, -50%);
+  margin-right: 25px;
   display: none;
   flex-basis: 100%;
 }
 .navigation__item {
   list-style: none;
-  width: 85px;
+}
+.navigation__item--login {
+  text-decoration: none;
+  color: red;
+  font-size: larger;
+}
+.navigation__item--login:hover {
+  text-decoration: none;
+  color: blue;
 }
 .navigation__link {
   display: flex;
   text-decoration: none;
-  width: 85px;
+  color: #6a6a6a;
+  font-size: larger;
 }
 .navigation__unordered {
   display: flex;
@@ -53,6 +60,25 @@ body {
   display: flex;
 }
 
+@media screen and (min-width: 768px) {
+  .navigation {
+    justify-content: space-between;
+  }
+  .navigation__checkbox:checked + .navigation__hamburger + .navigation__list {
+    display: none;
+  }
+  .navigation__list {
+    display: flex;
+  }
+  .navigation__hamburger {
+    display: none;
+  }
+  .navigation__unordered {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+  }
+}
 .hero {
   display: flex;
   margin-top: 25px;
@@ -376,6 +402,15 @@ body {
 .footer__link {
   color: black;
   text-decoration: none;
+}
+.footer__bottom {
+  margin: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__bottom--para {
+  color: rgb(175, 174, 174);
+  font-weight: 900;
 }
 
 /*# sourceMappingURL=styles.css.map */
