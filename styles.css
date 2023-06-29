@@ -142,6 +142,9 @@ body {
   border: 3px solid transparent;
   border-radius: 25px;
 }
+.hero__button:hover {
+  cursor: pointer;
+}
 
 @media screen and (min-width: 600px) {
   .hero__introduction {
@@ -396,10 +399,14 @@ body {
   text-justify: right;
   margin-left: 25px;
   width: 50%;
+  position: relative;
+  z-index: 1;
 }
 .sign__para2 {
   margin-top: 25px;
-  color: black;
+  position: relative;
+  z-index: 1;
+  color: #ff3998;
   font-weight: 900;
   margin-bottom: 5px;
   text-justify: right;
@@ -409,8 +416,8 @@ body {
 .sign__button {
   margin-top: 15px;
   margin-bottom: 10px;
-  margin-right: 50%;
-  align-self: center;
+  margin-left: 25px;
+  align-self: flex-start;
   background: transparent;
   padding: 25px 30px;
   background-image: linear-gradient(90deg, white, white), linear-gradient(90deg, hsl(289, 65%, 64%), hsl(226, 78%, 67%));
@@ -418,6 +425,11 @@ body {
   background-origin: border-box;
   border: 3px solid transparent;
   border-radius: 25px;
+  position: relative;
+  z-index: 1;
+}
+.sign__button:hover {
+  cursor: pointer;
 }
 .sign__image-container {
   position: absolute;
@@ -493,6 +505,32 @@ body {
 .footer__bottom--para {
   color: rgb(175, 174, 174);
   font-weight: 900;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer__links {
+    align-items: flex-start;
+    margin-top: 0;
+    margin-left: 0;
+    flex-wrap: nowrap;
+  }
+  .footer__links > div {
+    flex: 0 0 25%;
+  }
+  .footer__link:hover {
+    color: red;
+  }
+  .footer > div {
+    flex: 0 0 48%;
+  }
+  .footer > div:nth-child(3) {
+    flex-basis: 98%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
