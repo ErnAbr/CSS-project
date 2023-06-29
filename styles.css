@@ -403,7 +403,7 @@ body {
   text-decoration: none;
 }
 .footer__bottom {
-  margin: 25px;
+  margin: 25px 0px 25px 25px;
   display: flex;
   justify-content: space-between;
 }
