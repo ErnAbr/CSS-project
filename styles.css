@@ -31,7 +31,7 @@ body {
 .navigation__item--login {
   text-decoration: none;
   color: red;
-  font-size: larger;
+  font-size: large;
 }
 .navigation__item--login:hover {
   text-decoration: none;
@@ -41,7 +41,7 @@ body {
   display: flex;
   text-decoration: none;
   color: #6a6a6a;
-  font-size: larger;
+  font-size: large;
 }
 .navigation__unordered {
   display: flex;
