@@ -12,11 +12,6 @@ body {
   background-color: #ffeceb;
   margin: 30px auto;
 }
-@include media-query(1024px) {
-  body {
-    width: 1024px;
-  }
-}
 
 .navigation {
   background-color: #ffeceb;
@@ -69,25 +64,7 @@ body {
     display: flex;
   }
 }
-@include media-query(600px) {
-  .navigation {
-    justify-content: space-between;
-    &__checkbox:checked + &__hamburger + &__list {
-      display: none;
-    }
-    &__list {
-      display: flex;
-    }
-    &__hamburger {
-      display: none;
-    }
-    &__unordered {
-      display: flex;
-      flex-direction: row;
-      gap: 15px;
-    }
-  }
-}
+
 .hero {
   display: flex;
   margin-top: 25px;
@@ -151,28 +128,7 @@ body {
     cursor: pointer;
   }
 }
-@include media-query(600px) {
-  .hero {
-    &__introduction {
-      justify-content: center;
-      margin-left: 50px;
-    }
-    &__image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: static;
-    }
-    &__image {
-      position: static;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      transform: translateX(0);
-    }
-  }
-}
+
 .promotion {
   height: 250px;
   background-image: url(./assets/background.svg);
@@ -196,12 +152,7 @@ body {
     margin-right: 25px;
   }
 }
-@include media-query(600px) {
-  .promotion {
-    background-position: 100%;
-    border-radius: 10px;
-  }
-}
+
 .sponsor {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -220,20 +171,7 @@ body {
     }
   }
 }
-@include media-query(600px) {
-  .sponsor {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 100%;
-    margin-top: 25px;
-    &__logo {
-      &--last {
-        grid-row-start: 1;
-        grid-column-start: 5;
-        grid-column-end: 6;
-      }
-    }
-  }
-}
+
 .nft {
   margin-top: 25px;
   &__introduction {
@@ -342,33 +280,6 @@ body {
     }
   }
 }
-@include media-query(600px) {
-  .card {
-    &__image {
-      width: 35vw;
-    }
-  }
-}
-@include media-query(1024px) {
-  .carousel {
-    display: flex;
-    justify-content: space-around;
-    // gap: 30px;
-    overflow-x: auto;
-    width: 100%;
-    height: 100%;
-    scroll-snap-type: none;
-    overflow-x: hidden;
-  }
-  .card {
-    &__image {
-      width: 100%;
-    }
-    &__content {
-      width: 100%;
-    }
-  }
-}
 
 .sign {
   display: flex;
@@ -455,20 +366,7 @@ body {
     justify-content: flex-end;
   }
 }
-@include media-query(1024px) {
-  .sign {
-    // height: 300px;
-    &__introduction {
-      border-bottom: none;
-    }
-    &__image-container {
-      justify-content: center;
-      &--image {
-        margin-left: 50%;
-      }
-    }
-  }
-}
+
 .footer {
   &__top {
     margin-left: 25px;
@@ -529,7 +427,102 @@ body {
     }
   }
 }
+
+@include media-query(600px) {
+  .navigation {
+    justify-content: space-between;
+    &__checkbox:checked + &__hamburger + &__list {
+      display: none;
+    }
+    &__list {
+      display: flex;
+    }
+    &__hamburger {
+      display: none;
+    }
+    &__unordered {
+      display: flex;
+      flex-direction: row;
+      gap: 15px;
+    }
+  }
+  .hero {
+    &__introduction {
+      justify-content: center;
+      margin-left: 50px;
+    }
+    &__image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: static;
+    }
+    &__image {
+      position: static;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transform: translateX(0);
+    }
+  }
+  .promotion {
+    background-position: 100%;
+    border-radius: 10px;
+  }
+  .sponsor {
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    margin-top: 25px;
+    &__logo {
+      &--last {
+        grid-row-start: 1;
+        grid-column-start: 5;
+        grid-column-end: 6;
+      }
+    }
+  }
+  .card {
+    &__image {
+      width: 35vw;
+    }
+  }
+}
+
 @include media-query(1024px) {
+  body {
+    width: 1024px;
+  }
+  .carousel {
+    display: flex;
+    justify-content: space-around;
+    // gap: 30px;
+    overflow-x: auto;
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: none;
+    overflow-x: hidden;
+  }
+  .card {
+    &__image {
+      width: 100%;
+    }
+    &__content {
+      width: 100%;
+    }
+  }
+  .sign {
+    // height: 300px;
+    &__introduction {
+      border-bottom: none;
+    }
+    &__image-container {
+      justify-content: center;
+      &--image {
+        margin-left: 50%;
+      }
+    }
+  }
   .footer {
     display: flex;
     flex-wrap: wrap;
