@@ -139,7 +139,6 @@ body {
 }
 .navigation__checkbox:checked + .navigation__hamburger + .navigation__list {
   display: flex;
-  justify-content: start;
 }
 
 .navigation {

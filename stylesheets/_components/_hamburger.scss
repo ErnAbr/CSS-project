@@ -21,6 +21,5 @@
   }
   &__checkbox:checked + &__hamburger + &__list {
     display: flex;
-    justify-content: start;
   }
 }
