@@ -1,0 +1,30 @@
+.nft {
+  margin-top: 25px;
+  &__introduction {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+  }
+  &__header {
+    color: black;
+    font-weight: 900;
+    font-size: xx-large;
+    margin-bottom: 5px;
+    text-justify: right;
+    margin-left: 25px;
+  }
+  &__intro {
+    color: rgb(70, 69, 69);
+    font-weight: 600;
+    margin-bottom: 5px;
+    text-justify: right;
+    margin-left: 25px;
+    line-height: 1.5;
+  }
+  &__link {
+    text-decoration: underline;
+  }
+  &__link:visited {
+    color: inherit;
+  }
+}
