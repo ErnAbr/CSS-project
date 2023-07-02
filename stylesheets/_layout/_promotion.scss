@@ -1,0 +1,23 @@
+.promotion {
+  height: 150px;
+  background-image: url(./assets/background.svg);
+  background-position: left center;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 10px;
+  &__header {
+    font-weight: 900;
+    font-size: x-large;
+    text-justify: right;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 15px;
+  }
+  &__para {
+    text-justify: right;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}

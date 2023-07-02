@@ -1,0 +1,27 @@
+.navigation {
+  background-color: #ffeceb;
+  display: flex;
+  justify-content: space-around;
+  &__logo {
+    margin-left: 3%;
+  }
+  &__checkbox {
+    display: none;
+  }
+  &__list {
+    display: none;
+    flex-basis: 100%;
+  }
+  &__item {
+    list-style: none;
+    &--login {
+      text-decoration: none;
+      color: red;
+      font-size: large;
+    }
+    &--login:hover {
+      text-decoration: none;
+      color: blue;
+    }
+  }
+}

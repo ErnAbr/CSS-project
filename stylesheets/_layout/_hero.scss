@@ -1,0 +1,48 @@
+.hero {
+  display: flex;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  justify-content: center;
+
+  &__introduction {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 70%;
+  }
+  &__para1 {
+    color: #ff3998;
+    font-weight: 900;
+    margin-bottom: 5px;
+    text-justify: right;
+    margin-left: 25px;
+  }
+  &__header {
+    color: black;
+    font-weight: 900;
+    font-size: xx-large;
+    margin-bottom: 5px;
+    text-justify: right;
+    margin-left: 25px;
+  }
+  &__para2 {
+    color: black;
+    font-weight: 900;
+    margin-bottom: 5px;
+    text-justify: right;
+    margin-left: 25px;
+  }
+  &__image-container {
+    position: relative;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+  }
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 90%;
+    height: 100%;
+    width: auto;
+    transform: translateX(-50%);
+  }
+}
